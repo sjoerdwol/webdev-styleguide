@@ -251,7 +251,7 @@ h6 {
 
 .list-horiz {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   margin-bottom: 3rem;
 }
 
@@ -325,4 +325,108 @@ h6 {
 
 .small.secondary.active{
   color: var(--color-secondary);
+}
+
+section > section {
+  padding: 2rem 0;
+}
+
+.card {
+  border: 2px solid var(--color-secondary);
+  left: 0;
+  max-width: 445px;
+  position: relative;
+  top: 0;
+}
+
+.card figure {
+  border-bottom: 2px solid var(--color-secondary);
+  max-height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.card article {
+  padding: 0.5rem;
+}
+
+.card h2 {
+  margin: 0.5rem 0;
+}
+
+.card .list-horiz {
+  margin-bottom: 1rem;
+}
+
+.card .subtitle .list-horiz li+li::before {
+  content: "•";
+  margin: 0 0.5rem 0 0;
+}
+
+.card p {
+  margin-bottom: 3rem;
+}
+
+.card .bottom {
+  margin: 0;
+}
+
+.card .button {
+  cursor: pointer;
+}
+
+.card .button.primary:hover, .card .button.primary:active {
+  background-color: var(--color-primary-hover);
+}
+
+.card .button.primary:active {
+  color: var(--color-secondary);
+}
+
+.card .button.secondary:hover, .card .button.secondary:active {
+  background-color: var(--color-third-hover);
+}
+
+.card .button.secondary:active {
+  color: var(--color-primary-hover);
+}
+
+.card.small {
+  border: none;
+  max-width: 260px;
+}
+
+.card.small figure {
+  border: 2px solid var(--color-secondary);
+}
+
+.card h4 {
+  margin-bottom: 0;
+}
+
+.card.list {
+  align-items: center;
+  display: grid;
+  gap: 0 0.5rem;
+  grid-auto-flow: column;
+  grid-template: 7rem / 7rem 1fr;
+  max-width: 28rem;
+  overflow: hidden;
+}
+
+.card.list figure, .card.list.compact figure {
+  border-right: 2px solid var(--color-secondary);
+}
+
+.card.list h5 {
+  margin-bottom: 0;
+}
+
+.card.list.compact {
+  grid-template: 6rem / 6rem 1fr;
 }
