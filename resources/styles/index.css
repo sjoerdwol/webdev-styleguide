@@ -88,7 +88,6 @@ nav li:hover {
 
 li a {
   display: inline-block;
-  text-decoration: none;
 }
 
 .label {
@@ -429,4 +428,14 @@ img {
 
 .card.list.compact {
   grid-template: 6rem / 6rem 1fr;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  margin: 1rem auto;
+  text-align: center;
+  width: 100%;
 }
