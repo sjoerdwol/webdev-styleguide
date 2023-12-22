@@ -100,9 +100,6 @@ section {
 }
 
 .section_title {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.167;
   margin-bottom: 4rem;
 }
 
@@ -119,7 +116,7 @@ p {
   max-width: 600px;
 }
 
-.main_text h1 {
+h1 {
   font-size: 6rem;
   font-weight: 900;
   letter-spacing: 0.25rem;
@@ -167,6 +164,7 @@ h3 {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.33;
+  margin-bottom: 2rem;
 }
 
 .subtitle {
@@ -178,4 +176,63 @@ h3 {
 
 .small {
   font-size: 0.875rem;
+}
+
+.overline {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.167;
+  margin-bottom: 2rem;
+}
+
+.col-text {
+  columns: 20rem 3;
+}
+
+#section_typography ul {
+  display: flex;
+  margin-top: 6rem;
+  flex-flow: column nowrap;
+}
+
+#section_typography ul li {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+#section_typography ul li * {
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  font-weight: 700;
+}
+
+.caption {
+  font-size: 0.75rem;
+  font-weight: 400;
 }
