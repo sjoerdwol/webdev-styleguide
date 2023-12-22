@@ -32,6 +32,8 @@
   background-color: var(--color-secondary);
 }
 
+/* GENERAL DECLARATIONS */
+
 * {
   background-color: var(--color-third);
   color: var(--color-secondary);
@@ -58,6 +60,97 @@ body {
   margin: 0 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+li a {
+  display: inline-block;
+}
+
+/* DIFFERENT TEXTS */
+.btn {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+.caption {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+.overline {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+}
+
+/* HEADINGS */
+h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  letter-spacing: 0.25rem;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.167;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.33;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* HEADER & NAVIGATION */
 header {
   display: block;
   position: fixed;
@@ -86,17 +179,7 @@ nav li:hover {
   border-top: 2px solid var(--color-primary);
 }
 
-li a {
-  display: inline-block;
-}
-
-.label {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.125rem;
-  text-transform: uppercase;
-}
-
+/* MAIN CONTENT */
 main {
   margin-top: 3.5rem;
 }
@@ -116,19 +199,30 @@ p {
   margin-bottom: 1.75rem;
 }
 
+.banner {
+  background-color: var(--color-primary);
+  display: flex;
+  height: 0.5rem;
+  width: 4rem;
+}
+
+.list-horiz {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 3rem;
+}
+
+.list-horiz > * {
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+/* MAIN CONTENT - INTRO */
 .dark {
   opacity: 0.8;
 }
 
 .main_text {
   max-width: 600px;
-}
-
-h1 {
-  font-size: 6rem;
-  font-weight: 900;
-  letter-spacing: 0.25rem;
-  margin-bottom: 4rem;
 }
 
 .brand {
@@ -140,13 +234,7 @@ h1 {
   line-height: 0;
 }
 
-.banner {
-  background-color: var(--color-primary);
-  display: flex;
-  height: 0.5rem;
-  width: 4rem;
-}
-
+/* MAIN CONTENT - COLORS */
 .swatch li {
   align-items: center;
   display: flex;
@@ -168,36 +256,7 @@ h1 {
   margin: 0;
 }
 
-h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.33;
-  margin-bottom: 2rem;
-}
-
-.subtitle {
-  font-size: 0.875rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.0625rem;
-}
-
-.small {
-  font-size: 0.875rem;
-}
-
-.overline {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.125rem;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.167;
-  margin-bottom: 2rem;
-}
+/* MAIN CONTENT - TYPOGRAPHY */
 
 .col-text {
   columns: 20rem 3;
@@ -218,46 +277,7 @@ h2 {
   margin-top: 0;
 }
 
-h4 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 2rem;
-}
-
-h5 {
-  font-size: 1.125rem;
-  margin-bottom: 1.5rem;
-}
-
-h6 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-
-.btn {
-  font-size: 0.875rem;
-  font-weight: 700;
-  letter-spacing: 0.125rem;
-  text-transform: uppercase;
-}
-
-.caption {
-  font-size: 0.75rem;
-  font-weight: 400;
-}
-
-.list-horiz {
-  display: flex;
-  flex-flow: row wrap;
-  margin-bottom: 3rem;
-}
-
-.list-horiz > * {
-  margin: 0.5rem 0.5rem 0 0;
-}
-
+/* MAIN CONTENT - BUTTONS */
 .button {
   align-items: center;
   border-radius: 0.6rem;
@@ -326,6 +346,7 @@ h6 {
   color: var(--color-secondary);
 }
 
+/* MAIN CONTENT - CARDS */
 section > section {
   padding: 2rem 0;
 }
@@ -338,6 +359,10 @@ section > section {
   top: 0;
 }
 
+.card article {
+  padding: 0.5rem;
+}
+
 .card figure {
   border-bottom: 2px solid var(--color-secondary);
   max-height: 220px;
@@ -345,26 +370,16 @@ section > section {
   position: relative;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
-.card article {
-  padding: 0.5rem;
-}
-
 .card h2 {
   margin: 0.5rem 0;
 }
 
-.card .list-horiz {
-  margin-bottom: 1rem;
+.card h4 {
+  margin-bottom: 0;
 }
 
-.card .subtitle .list-horiz li+li::before {
-  content: "•";
-  margin: 0 0.5rem 0 0;
+.card.list h5 {
+  margin-bottom: 0;
 }
 
 .card p {
@@ -395,19 +410,6 @@ img {
   color: var(--color-primary-hover);
 }
 
-.card.small {
-  border: none;
-  max-width: 260px;
-}
-
-.card.small figure {
-  border: 2px solid var(--color-secondary);
-}
-
-.card h4 {
-  margin-bottom: 0;
-}
-
 .card.list {
   align-items: center;
   display: grid;
@@ -422,17 +424,29 @@ img {
   border-right: 2px solid var(--color-secondary);
 }
 
-.card.list h5 {
-  margin-bottom: 0;
-}
-
 .card.list.compact {
   grid-template: 6rem / 6rem 1fr;
 }
 
-a {
-  text-decoration: none;
+.card .list-horiz {
+  margin-bottom: 1rem;
 }
+
+.card.small {
+  border: none;
+  max-width: 260px;
+}
+
+.card.small figure {
+  border: 2px solid var(--color-secondary);
+}
+
+.card .subtitle .list-horiz li+li::before {
+  content: "•";
+  margin: 0 0.5rem 0 0;
+}
+
+/* FOOTER */
 
 footer {
   margin: 1rem auto;
